@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Padrões de Inspeção do Chat Privado da Equipe</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', Arial, sans-serif;
+      background-color: #f4f6f9;
+      color: #333;
+      margin: 0;
+      padding: 0;
+    }
+    .container {
+      max-width: 800px;
+      margin: 0 auto;
+      padding: 20px;
+    }
+    .section {
+      background: white;
+      border-radius: 10px;
+      padding: 20px;
+      margin-bottom: 20px;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+    }
+    .title {
+      background: linear-gradient(135deg, #6e8efb, #a777e3);
+      padding: 20px;
+      border-radius: 10px;
+      margin-bottom: 25px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    }
+    .title h1 {
+      color: white;
+      margin: 0;
+      text-align: center;
+    }
+    .criteria-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 10px;
+    }
+    .criteria-header h2 {
+      margin: 0;
+      color: #2c3e50;
+    }
+    .criteria-header span {
+      background: #4CAF50;
+      color: white;
+      padding: 5px 10px;
+      border-radius: 20px;
+      font-weight: bold;
+    }
+    .rule {
+      background: #f8f9fa;
+      padding: 15px;
+      border-radius: 8px;
+      margin: 10px 0;
+    }
+    .rule h3 {
+      margin-top: 0;
+      color: #3498db;
+    }
+    .example {
+      display: flex;
+      gap: 15px;
+      margin-top: 15px;
+    }
+    .example div {
+      flex: 1;
+      padding: 12px;
+      border-radius: 8px;
+    }
+    .example .good {
+      background: #e8f5e9;
+    }
+    .example .bad {
+      background: #ffebee;
+    }
+    .example h4 {
+      margin-top: 0;
+    }
+    .example .good p {
+      font-style: italic;
+      background: white;
+      padding: 8px;
+      border-radius: 5px;
+    }
+    .example .bad p {
+      font-style: italic;
+      background: white;
+      padding: 8px;
+      border-radius: 5px;
+    }
+    .evaluation-table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-bottom: 20px;
+      box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+    }
+    .evaluation-table th, .evaluation-table td {
+      padding: 12px 15px;
+      border-bottom: 2px solid #e0e0e0;
+    }
+    .evaluation-table th {
+      text-align: left;
+      background-color: #f5f7fa;
+    }
+    .evaluation-table td {
+      text-align: center;
+    }
+    .evaluation-table tr:last-child td {
+      border-bottom: none;
+    }
+    .evaluation-table .points {
+      font-weight: bold;
+      color: #4CAF50;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="container">
+
+    <div class="title">
+      <h1>📊 Padrões de Inspeção do Chat Privado da Equipe</h1>
+    </div>
+
+    <!-- Critério 1 -->
+    <div class="section">
+      <div class="criteria-header">
+        <h2>1. Mensagem de Boas-Vindas Correta</h2>
+        <span>2 pontos</span>
+      </div>
+      <div class="rule">
+        <h3>✅ Regra</h3>
+        <p>A mensagem de boas-vindas deve ser concisa, natural e guiar o jogador a entender a funcionalidade do Dindin.</p>
+      </div>
+      <div class="example">
+        <div class="good">
+          <h4>👍 Exemplo</h4>
+          <p>"Bem-vindo! Você já coletou alguns Dindin no jogo? Se precisar de ajuda, posso te mostrar como usá-los."</p>
+        </div>
+        <div class="bad">
+          <h4>👎 Exemplo Ruim</h4>
+          <p>"Entre no nosso WhatsApp agora e aprenda como sacar Dindin."</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Critério 2 -->
+    <div class="section">
+      <div class="criteria-header">
+        <h2>2. Resposta Rápida ao Jogador</h2>
+        <span>3 pontos</span>
+      </div>
+      <div class="rule">
+        <h3>✅ Regra</h3>
+        <p>Responder à mensagem do jogador de forma ativa dentro de 20 minutos.</p>
+      </div>
+      <div class="example">
+        <div class="good">
+          <h4>👍 Exemplo</h4>
+          <p><strong>Jogador pergunta:</strong> "Como usar o Dindin?"</p>
+          <p>"Você pode usar o Dindin para trocar por recompensas. Se precisar de ajuda, posso te explicar mais."</p>
+        </div>
+        <div class="bad">
+          <h4>👎 Exemplo Ruim</h4>
+          <p>Respostas demorando mais de 20 minutos ou não respondendo após a pergunta do jogador.</p>
+          <p>Desaparecer no meio da conversa sem seguir com a resposta.</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Critério 3 -->
+    <div class="section">
+      <div class="criteria-header">
+        <h2>3. Explicação das Funções</h2>
+        <span>2 pontos</span>
+      </div>
+      <div class="rule">
+        <h3>✅ Regra</h3>
+        <p>Explicar claramente as funções do Dindin, evitando o uso do termo "sacar".</p>
+      </div>
+      <div class="example">
+        <div class="good">
+          <h4>👍 Exemplo</h4>
+          <p><strong>Jogador pergunta:</strong> "Como resgatar o Dindin?"</p>
+          <p>"Eu posso te ajudar a resgatar o Dindin para melhorar sua experiência no jogo."</p>
+        </div>
+        <div class="bad">
+          <h4>👎 Exemplo Ruim</h4>
+          <p>"Você pode sacar o saldo de Dindin a qualquer momento."</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Critério 4 -->
+    <div class="section">
+      <div class="criteria-header">
+        <h2>4. Orientação para WhatsApp</h2>
+        <span>3 pontos</span>
+      </div>
+      <div class="rule">
+        <h3>✅ Regra</h3>
+        <p>Orientar o jogador a adicionar o WhatsApp no momento certo.</p>
+      </div>
+      <div class="example">
+        <div class="good">
+          <h4>👍 Exemplo</h4>
+          <p><strong>Jogador pergunta:</strong> "Você pode me ajudar a entender melhor?"</p>
+          <p>"Adicione-me no WhatsApp, posso te dar instruções detalhadas sobre como fazer isso."</p>
+        </div>
+        <div class="bad">
+          <h4>👎 Exemplo Ruim</h4>
+          <p>"Você precisa adicionar no WhatsApp para conseguir fazer isso."</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Tabela de Avaliação -->
+    <div class="section">
+      <h1 style="color: #6e8efb; text-align: center; font-size: 1.5em;">📋 Critérios de Avaliação dos Promotores</h1>
+      <table class="evaluation-table">
+        <thead>
+          <tr>
+            <th>Critério</th>
+            <th>Descrição</th>
+            <th>Pontos</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Mensagem de boas-vindas correta</td>
+            <td>Por exemplo: "Bem-vindo(a) para negociar Dindin com a gente!"</td>
+            <td class="points">2 pts</td>
+          </tr>
+          <tr>
+            <td>Responder o jogador em até 20 minutos</td>
+            <td>Responder mensagens iniciadas pelo jogador de forma ágil.</td>
+            <td class="points">3 pts</td>
+          </tr>
+          <tr>
+            <td>Explicar a função do Dindin corretamente</td>
+            <td>Evitar termos como "sacar" e deixar claro como usar o Dindin.</td>
+            <td class="points">2 pts</td>
+          </tr>
+          <tr>
+            <td>Orientar para o WhatsApp corretamente</td>
+            <td>Adicionar o WhatsApp no momento certo para dar mais informações.</td>
+            <td class="points">3 pts</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+  </div>
+
+</body>
+</html>
