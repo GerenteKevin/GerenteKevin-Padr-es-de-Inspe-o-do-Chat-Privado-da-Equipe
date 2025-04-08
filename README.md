@@ -1,0 +1,1 @@
+# GerenteKevin-Padr-es-de-Inspe-o-do-Chat-Privado-da-Equipe
